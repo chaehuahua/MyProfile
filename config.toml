@@ -1,0 +1,7 @@
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.90.0'
+
+[params]
+  customCSS = ["css/terminal.css"]
