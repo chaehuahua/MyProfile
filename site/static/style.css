@@ -38,3 +38,15 @@
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
+
+/* Fira Code에는 한글 글꼴이 없어서, 한글은 읽기 쉬운 고정폭·고딕 글꼴로 이어지게 지정 */
+body {
+  font-family:
+    "Fira Code",
+    "D2Coding",
+    "Nanum Gothic Coding",
+    "Malgun Gothic",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    monospace;
+}
