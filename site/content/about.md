@@ -23,3 +23,13 @@ description = "바이오메디컬공학부 3학년 채다연의 관심 분야, �
 1. 2026년 겨울방학 동안 [Biopython 공식 튜토리얼](https://biopython.org/DIST/docs/tutorial/Tutorial.html)의 서열 파일 읽기 부분을 따라 해 본다.
 2. FASTA 파일을 읽어 서열 길이와 GC 함량을 계산하는 짧은 스크립트를 만든다.
 3. 만든 스크립트와 실행 결과를 GitHub 저장소에 올리고, 이 사이트의 활동 목록에 기록한다.
+
+## 사용해 본 기술 {#skills}
+
+| 기술 | 실제로 사용한 곳 |
+| --- | --- |
+| HTML / CSS | 1학년 「웹프로그래밍 기초」 과제로 8개 메뉴짜리 자기소개 웹페이지를 직접 작성 ([활동 기록 보기](../posts/first-webpage/)) |
+| Hugo | 이 포트폴리오 사이트를 Terminal 테마로 만들고 설정·콘텐츠를 수정 |
+| Git / GitHub Actions | 이 사이트의 수정 이력을 커밋으로 관리하고, push할 때마다 GitHub Pages로 자동 배포 |
+
+숙련도보다는 직접 써 보면서 익히는 중인 도구들입니다.
