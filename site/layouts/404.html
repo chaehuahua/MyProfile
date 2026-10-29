@@ -1,0 +1,14 @@
+{{/* 테마 404.html을 덮어씀: 한국어 안내와 저장소 하위 경로를 포함한 홈 링크 */}}
+{{ define "main" }}
+  <div class="post">
+    <h1 class="post-title">404 — 페이지를 찾을 수 없습니다</h1>
+    <div class="post-content">
+      <p>주소가 바뀌었거나 삭제된 페이지입니다.</p>
+      <ul>
+        <li><a href="{{ "/" | relLangURL }}">홈으로 돌아가기</a></li>
+        <li><a href="{{ "about/" | relLangURL }}">소개 보기</a></li>
+        <li><a href="{{ "posts/first-webpage/" | relLangURL }}">대표 활동 보기</a></li>
+      </ul>
+    </div>
+  </div>
+{{ end }}
