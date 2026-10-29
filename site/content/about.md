@@ -20,7 +20,7 @@ description = "바이오메디컬공학부 3학년 채다연의 관심 분야, �
 
 **다음 행동:**
 
-1. 2026년 겨울방학 동안 [Biopython 공식 튜토리얼](https://biopython.org/DIST/docs/tutorial/Tutorial.html)의 서열 파일 읽기 부분을 따라 해 본다.
+1. 2026년 겨울방학 동안 [Biopython 공식 튜토리얼](https://biopython.org/docs/latest/Tutorial/)의 서열 파일 읽기 부분을 따라 해 본다.
 2. FASTA 파일을 읽어 서열 길이와 GC 함량을 계산하는 짧은 스크립트를 만든다.
 3. 만든 스크립트와 실행 결과를 GitHub 저장소에 올리고, 이 사이트의 활동 목록에 기록한다.
 
