@@ -81,4 +81,4 @@ git push origin main
 | 1학년 웹페이지 캡처 (`site/content/posts/first-webpage/*.jpg`) | 2024년 직접 만든 웹페이지 화면 | 직접 제작 (개인정보 영역을 잘라내고 가사 영역을 흐리게 편집) | - |
 | `site/layouts/`, `site/static/style.css` 수정 | 테마 템플릿을 바탕으로 수정 | 직접 수정 (AI 도움) | 테마 MIT License 따름 |
 
-AI 활용: 설정·템플릿 수정과 문장 정리에 Claude를 사용했습니다. AI 도움을 받은 커밋에는 메시지 끝에 `Co-Authored-By: Claude` 줄이 있습니다. 모든 결과는 직접 빌드하고 화면으로 확인했습니다.
+AI 활용: 설정·템플릿 수정과 문장 정리에 Claude를 사용했습니다. 구체적인 사용 사례는 보고서의 AI 활용 기록에 적었습니다. 모든 결과는 직접 빌드하고 화면으로 확인했습니다.
