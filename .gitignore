@@ -104,6 +104,9 @@ resources
 **/resources/_gen/
 **/.hugo_build.lock
 /.github-pages-setup-backups/
+# site 폴더 안에서 hugo / hugo server를 직접 실행할 때 생기는 결과물
+/site/public/
+/site/.hugo_build.lock
 
 # 로컬 미리보기·편집기·OS 임시 파일
 .DS_Store
