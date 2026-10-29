@@ -1,0 +1,22 @@
+/*
+ * 내 사이트 전용 스타일 (테마 head.html이 static/style.css가 있으면 자동으로 불러온다)
+ * 테마 원본 CSS는 건드리지 않고 여기서만 덮어쓴다.
+ */
+
+/* 모바일(684px 이하)에서도 메뉴를 숨기지 않고 줄바꿈해서 보여 준다 */
+@media (max-width: 684px) {
+  .menu--desktop {
+    display: flex;
+  }
+
+  .navigation-menu__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin: 12px 0 0;
+  }
+
+  .navigation-menu__inner li {
+    padding: 6px 0;
+  }
+}
