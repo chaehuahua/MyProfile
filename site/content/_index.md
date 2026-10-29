@@ -9,6 +9,7 @@ title = "홈"
 
 - [자기소개 보기](about/): 관심 분야, 학습 목표, 사용해 본 기술
 - [대표 활동 보기](posts/first-webpage/): 1학년 「웹프로그래밍 기초」 자기소개 웹페이지
+- [이 사이트 제작 기록](posts/hugo-portfolio/): Hugo·GitHub Actions로 만든 과정 (진행 중)
 - [GitHub](https://github.com/chaehuahua): 이 사이트의 소스와 커밋 이력
 
 ## 활동 기록 {#activities}
