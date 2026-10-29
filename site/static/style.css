@@ -32,7 +32,9 @@
 }
 
 /* 한국어는 단어 중간에서 줄이 끊기지 않게 하고, 긴 URL·영문은 영역 안에서 줄바꿈 */
-body {
+*,
+*::before,
+*::after {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
