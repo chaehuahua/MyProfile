@@ -20,3 +20,13 @@
     padding: 6px 0;
   }
 }
+
+/* 현재 페이지 메뉴: 색만이 아니라 굵기와 앞쪽 표시(>)로도 구분 */
+.navigation-menu a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation-menu a[aria-current="page"]::before {
+  content: "> ";
+}
