@@ -39,3 +39,19 @@ hugo server --config config.toml,pages.json
 python .github/pages_build.py --build
 # → public/ 폴더에 결과가 생기고 "빌드 완료"가 출력되면 성공
 ```
+
+## 내용을 고치려면 어떤 파일을 열까
+
+실제 사이트는 **`site/` 폴더**에서 만들어집니다. 저장소 맨 위의 `layouts/`, `assets/`, `exampleSite/` 등은 테마 원본 ZIP에 들어 있던 파일로, 빌드에 쓰이지 않습니다.
+
+| 고칠 것 | 파일 |
+| --- | --- |
+| 사이트 제목·부제·메뉴·푸터 문구 | `site/config.toml` |
+| 홈 화면 소개 | `site/content/_index.md` |
+| 소개(관심 분야·학습 목표·기술) | `site/content/about.md` |
+| 대표 활동 글과 캡처 이미지 | `site/content/posts/first-webpage/` (`index.md` + `.jpg`) |
+| 새 활동 글 추가 | `site/content/posts/새-폴더/index.md` 만들기 |
+| 색상·글꼴·모바일 메뉴 등 스타일 | `site/static/style.css` (테마 CSS를 덮어씀) |
+| 화면 구조(메뉴·로고·본문 바로가기·404) | `site/layouts/` (테마 템플릿을 같은 이름으로 덮어씀) |
+| 테마 색상 변수 | `site/themes/template/assets/css/terminal.css` |
+| 배포 주소·Hugo 테마 설정 | `site/pages.json` (배포 스크립트가 만든 파일, 보통 고치지 않음) |
