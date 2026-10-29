@@ -22,9 +22,9 @@ pagination.pagerSize = 5
     [languages.ko.params]
       subtitle = "생명 정보를 데이터로 읽고 싶은 바이오메디컬공학부 학생 채다연의 포트폴리오"
       keywords = "채다연, 포트폴리오, 바이오메디컬공학, 생명정보학, 전북대학교"
-      menuMore = "Show more"
-      readMore = "Read more"
-      readOtherPosts = "Read other posts"
+      menuMore = "더 보기"
+      readMore = "자세히 보기"
+      readOtherPosts = "다른 글 보기"
       [languages.ko.params.logo]
         logoText = "~/chae-dayeon"
         logoHomeLink = "/"
