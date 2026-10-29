@@ -16,17 +16,17 @@ pagination.pagerSize = 5
 
 [languages]
   [languages.ko]
-    title = "Terminal"
+    title = "채다연 | Portfolio"
     languageName = "한국어"
     copyright = ""
     [languages.ko.params]
-      subtitle = "A simple, retro theme for Hugo"
-      keywords = ""
+      subtitle = "생명 정보를 데이터로 읽고 싶은 바이오메디컬공학부 학생 채다연의 포트폴리오"
+      keywords = "채다연, 포트폴리오, 바이오메디컬공학, 생명정보학, 전북대학교"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
       [languages.ko.params.logo]
-        logoText = "Terminal"
+        logoText = "~/chae-dayeon"
         logoHomeLink = "/"
 
     [languages.ko.menu]
