@@ -31,10 +31,17 @@ pagination.pagerSize = 5
 
     [languages.ko.menu]
       [[languages.ko.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+        identifier = "home"
+        name = "홈"
+        pageRef = "/"
+        weight = 1
       [[languages.ko.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "about"
+        name = "소개"
+        pageRef = "/about"
+        weight = 2
+      [[languages.ko.menu.main]]
+        identifier = "activity"
+        name = "대표 활동"
+        pageRef = "/posts/first-webpage"
+        weight = 3
