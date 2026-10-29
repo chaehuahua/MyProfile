@@ -50,3 +50,10 @@ body {
     "Noto Sans KR",
     monospace;
 }
+
+/* 키보드 초점: 테마 기본 1px 선은 어두운 배경에서 잘 안 보여 두껍고 밝게 */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--foreground);
+  outline-offset: 3px;
+}
