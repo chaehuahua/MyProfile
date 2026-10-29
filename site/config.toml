@@ -1,5 +1,7 @@
 baseURL = "https://chaehuahua.github.io/MyProfile/"
-languageCode = "en-us"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
+hasCJKLanguage = true
 
 pagination.pagerSize = 5
 
@@ -13,25 +15,26 @@ pagination.pagerSize = 5
   centerTheme = false
 
 [languages]
-  [languages.en]
+  [languages.ko]
     title = "Terminal"
+    languageName = "한국어"
     copyright = ""
-    [languages.en.params]
+    [languages.ko.params]
       subtitle = "A simple, retro theme for Hugo"
       keywords = ""
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
-      [languages.en.params.logo]
+      [languages.ko.params.logo]
         logoText = "Terminal"
         logoHomeLink = "/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
+    [languages.ko.menu]
+      [[languages.ko.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.en.menu.main]]
+      [[languages.ko.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
