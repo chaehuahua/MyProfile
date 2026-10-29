@@ -1,0 +1,19 @@
+{{/*
+  테마 menu.html을 덮어씀.
+  - 메뉴 수가 적어 '더 보기' 드롭다운 없이 모두 표시한다.
+  - 지금 보고 있는 페이지 메뉴에 aria-current="page"를 붙여 색 말고도 상태를 전달한다.
+  - 새 탭 링크에는 rel="noopener"를 붙인다.
+*/}}
+{{ $current := . }}
+<nav class="navigation-menu" aria-label="주 메뉴">
+  <ul class="navigation-menu__inner menu--desktop">
+    {{ range $.Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" .) (and .Page (eq .Page $current)) }}
+      <li>
+        <a href="{{ .URL }}"
+          {{- if $active }} aria-current="page"{{ end }}
+          {{- if .Params.newTab }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
