@@ -1,5 +1,5 @@
 {{/* 테마 logo.html을 덮어씀: 홈 주소를 저장소 하위 경로(/MyProfile/)까지 포함한 상대 주소로 만든다. */}}
-<a href="{{ "/" | relLangURL }}" aria-label="홈으로 이동">
+<a href="{{ "/" | relLangURL }}" title="홈으로 이동">
   <div class="logo">
     {{ with $.Site.Params.Logo.logoText }}{{ . }}{{ else }}Terminal{{ end }}
   </div>
