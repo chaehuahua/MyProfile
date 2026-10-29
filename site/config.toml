@@ -27,7 +27,6 @@ pagination.pagerSize = 5
       readOtherPosts = "다른 글 보기"
       [languages.ko.params.logo]
         logoText = "~/chae-dayeon"
-        logoHomeLink = "/"
 
     [languages.ko.menu]
       [[languages.ko.menu.main]]
