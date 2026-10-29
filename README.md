@@ -55,3 +55,17 @@ python .github/pages_build.py --build
 | 화면 구조(메뉴·로고·본문 바로가기·404) | `site/layouts/` (테마 템플릿을 같은 이름으로 덮어씀) |
 | 테마 색상 변수 | `site/themes/template/assets/css/terminal.css` |
 | 배포 주소·Hugo 테마 설정 | `site/pages.json` (배포 스크립트가 만든 파일, 보통 고치지 않음) |
+
+## 수정 후 배포하고 확인하기
+
+```bash
+git add .
+git commit -m "content: 바꾼 내용을 한 줄로 설명"
+git push origin main
+```
+
+1. **Actions 확인:** <https://github.com/chaehuahua/MyProfile/actions> 에서 방금 push한 커밋의 `Deploy Hugo to GitHub Pages` 실행이 노란 점(진행 중) → 초록 체크(성공)로 바뀌는지 봅니다. `build`와 `deploy` 두 단계가 모두 성공해야 합니다.
+2. **실패했다면:** 빨간 X를 눌러 `Build and fix project URL paths` 단계의 로그에서 `ERROR` 줄을 확인합니다. 대부분 Markdown 앞부분(`+++ ... +++`)의 따옴표 누락이나 잘못된 파일 경로입니다.
+3. **공개 화면 확인:** 1~2분 뒤 <https://chaehuahua.github.io/MyProfile/> 를 새로고침합니다. 이전 화면이 보이면 `Ctrl+Shift+R`(Mac은 `Cmd+Shift+R`)로 캐시 없이 다시 엽니다.
+
+처음 한 번만 필요한 설정: GitHub 저장소 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 선택합니다.
