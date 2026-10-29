@@ -1,0 +1,29 @@
+{{/* 테마 baseof.html을 덮어씀: 본문 바로가기 링크 추가, 본문 영역을 div 대신 <main>으로 표시 */}}
+<!DOCTYPE html>
+<html lang="{{ $.Site.Language }}">
+<head>
+  {{ block "title" . }}
+    <title>{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}</title>
+  {{ end }}
+  {{ partial "head.html" . }}
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+{{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
+
+<div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default false) " headings--one-size" "" }}">
+
+  {{ partial "header.html" . }}
+
+  <main class="content" id="main" tabindex="-1">
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+
+  {{ block "footer" . }}
+    {{ partial "footer.html" . }}
+  {{ end }}
+</div>
+
+</body>
+</html>
