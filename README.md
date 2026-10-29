@@ -69,3 +69,16 @@ git push origin main
 3. **공개 화면 확인:** 1~2분 뒤 <https://chaehuahua.github.io/MyProfile/> 를 새로고침합니다. 이전 화면이 보이면 `Ctrl+Shift+R`(Mac은 `Cmd+Shift+R`)로 캐시 없이 다시 엽니다.
 
 처음 한 번만 필요한 설정: GitHub 저장소 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 선택합니다.
+
+## 출처와 이용 조건
+
+| 자료 | 출처 | 구분 | 이용 조건 |
+| --- | --- | --- | --- |
+| Terminal 테마 (템플릿·CSS·JS·Fira Code 폰트 포함) | [panr/hugo-theme-terminal](https://github.com/panr/hugo-theme-terminal) | 외부 자료 | MIT License, [LICENSE.md](LICENSE.md) 유지, 사이트 푸터에 테마 출처 표시 |
+| Fira Code 글꼴 | [tonsky/FiraCode](https://github.com/tonsky/FiraCode) | 외부 자료 (테마에 포함) | SIL Open Font License 1.1 |
+| GitHub Pages 배포 스크립트·워크플로 (`prepare_github_pages.py`, `.github/`) | 수업 제공 | 외부 자료 | 수업 안내에 따름 |
+| 소개·활동 글 (`site/content/`) | 직접 작성 | 직접 제작 (문장 정리에 AI 도움) | - |
+| 1학년 웹페이지 캡처 (`site/content/posts/first-webpage/*.jpg`) | 2024년 직접 만든 웹페이지 화면 | 직접 제작 (개인정보 영역을 잘라내고 가사 영역을 흐리게 편집) | - |
+| `site/layouts/`, `site/static/style.css` 수정 | 테마 템플릿을 바탕으로 수정 | 직접 수정 (AI 도움) | 테마 MIT License 따름 |
+
+AI 활용: 설정·템플릿 수정과 문장 정리에 Claude를 사용했습니다. AI 도움을 받은 커밋에는 메시지 끝에 `Co-Authored-By: Claude` 줄이 있습니다. 모든 결과는 직접 빌드하고 화면으로 확인했습니다.
