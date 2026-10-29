@@ -1,0 +1,11 @@
+{{/* 테마 header.html을 덮어씀: 모바일 전용 'Menu ▾' 드롭다운을 빼고 모든 화면에서 같은 메뉴를 보여 준다. */}}
+<header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      {{ partial "logo.html" . }}
+    </div>
+  </div>
+  {{ if len $.Site.Menus }}
+    {{ partial "menu.html" . }}
+  {{ end }}
+</header>
